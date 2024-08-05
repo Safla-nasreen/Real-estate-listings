@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listings</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Your main content goes here -->
+
+    <footer>
+        <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Contact Information -->
+            <div style="flex: 1; min-width: 200px; margin: 10px;">
+                <h4>Contact Us</h4>
+                <p>1234 White City, Bangalore, Karnataka 56789</p>
+                <p>Email: <a href="mailto:dreamspace.example@gmail.com">dreamspace.example@gmail.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            </div>
+
+            <!-- Quick Links -->
+            <div style="flex: 1; min-width: 200px; margin: 10px;">
+                <h4>Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Legal Information -->
+        <div style="margin-top: 20px; color: #fff;">
+            <p>&copy; 2024 Dreamspace All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

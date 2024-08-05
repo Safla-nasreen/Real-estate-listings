@@ -1,0 +1,19 @@
+<!-- templates/property_list.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h2>Explore our {{ property_type.name }}s</h2>
+    <div class="property-list">
+        {% for property in properties %}
+            <div class="property-card">
+                <a href="{% url 'property_detail' property.id %}"><img src="{{ property.image.url }}" alt="{{ property.title }}">
+                <h2>{{ property.title }}</h2>
+                <p>{{ property.description }}</p>
+                <p class="price">${{ property.price }}</p>
+                <a href="{% url 'property_detail' property.id %}">View Details</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

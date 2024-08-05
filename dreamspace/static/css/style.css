@@ -1,0 +1,471 @@
+/* General body and container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    background: #006666;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #205050 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+footer {
+    background: #006666;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+body {
+    padding-bottom: 200px; /* Adjust based on the footer height */
+}
+/* Navbar styles */
+.custom-navbar-top {
+    background-color: #006666;
+    padding: 5px 15px;
+}
+
+.custom-navbar-top .navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.custom-navbar-top .navbar-brand h3 {
+    margin: 0;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd !important;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #333;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #006666;
+}
+
+.navbar-toggler {
+    padding: 5px 10px;
+}
+
+.form-inline .form-control {
+    margin-right: 5px;
+}
+
+.navbar-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-form .form-control {
+    width: 250px;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-light:hover {
+    color: #006666;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* Button styles */
+.button {
+    background-color: #006666;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Login and registration form styles */
+form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"] {
+    font: 1em sans-serif;
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #006666;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Property list styles */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.property-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.property-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.property-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+}
+
+.property-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.property-card .price {
+    font-size: 18px;
+    color: #20B2AA;
+    margin-top: 10px;
+}
+
+.property-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #006666;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.property-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .property-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .property-card {
+        width: 100%;
+    }
+}
+
+/* Property detail styles */
+.property-detail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.property-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.property-detail h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 0;
+}
+
+.property-detail p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.property-detail .price {
+    font-size: 24px;
+    color: #20B2AA;
+    margin-top: 10px;
+}
+
+.property-detail .btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #006666;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.property-detail .btn:hover {
+    background-color: #004d4d;
+}
+
+/* Responsive styles for detail page */
+@media (max-width: 768px) {
+    .property-detail {
+        padding: 15px;
+    }
+
+    .property-detail h2 {
+        font-size: 24px;
+    }
+
+    .property-detail p {
+        font-size: 14px;
+    }
+}
+
+/* Home page styles */
+.carousel-inner {
+    position: relative;
+}
+
+.text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.text-content h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.property-types {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.property-type-card {
+    flex: 1;
+    margin: 15px;
+    text-align: center;
+}
+
+.property-type-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.property-type-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.property-type-card a {
+    color: #20B2AA;
+    text-decoration: none;
+}
+
+.property-type-card a:hover {
+    text-decoration: underline;
+}
+
+/* Cart detail styles */
+.cart-items-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item h3 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.cart-item-price {
+    font-size: 16px;
+    color: #20B2AA;
+}
+
+.btn-remove {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-remove:hover {
+    background-color: #cc0000;
+}
+
+.btn-secondary {
+    background-color: #006666;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    background-color: #004d4d;
+}

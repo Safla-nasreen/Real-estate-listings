@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+    <h1>Search Results</h1>
+    <form method="get" action="{% url 'search_results' %}">
+        {{ form.as_p }}
+        <button type="submit">Search</button>
+    </form>
+
+    {% if properties %}
+        <ul>
+            {% for property in properties %}
+                <li>
+                    <h2>{{ property.title }}</h2>
+                    <img src="{{ property.image.url }}" alt="{{ property.title }}">
+                    <p>{{ property.description }}</p>
+                    <p>{{ property.price }}</p>
+                    <p>{{ property.location }}</p>
+                    <p>{{ property.property_type }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% elif request.GET %}
+        <p>No properties found.</p>
+    {% endif %}
+{% endblock %}

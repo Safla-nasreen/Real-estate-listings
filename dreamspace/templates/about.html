@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section id="about" style="background-color: #f4f4f4;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>We're Dreamspace, your trusted real estate partner since 1991. We guide clients through the market with ease and confidence.</p>
+        <p>**Our Mission:** Exceptional service, expert guidance, unwavering commitment.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'images/icon.png' %}" alt="Dreamspace Logo" class="img-fluid rounded mx-auto d-none d-md-block">
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h3>Services</h3>
+        <ul class="list-unstyled">
+          <li>Residential Sales & Purchases</li>
+          <li>Property Management</li>
+          <li>Real Estate Investment</li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <h3>Testimonials</h3>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <blockquote>"
+                Dreamspace made buying a breeze! Their expertise and clear communication helped me find the perfect home for my family.
+              "</blockquote>
+              <img src="{% static 'images/smith.jpg' %}" width="90" height="95" class="d-inline-block align-top" alt="">
+              <p>- Jane Smith, Homebuyer</p>
+            </div>
+
+
+
+  </div>
+</section>
+{% endblock %}

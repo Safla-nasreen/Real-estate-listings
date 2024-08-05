@@ -1,0 +1,26 @@
+<!-- templates/cart_detail.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <h2>Your Cart</h2>
+    {% if cart.items.all %}
+        <ul class="cart-items-list">
+        {% for item in cart.items.all %}
+            <li class="cart-item">
+                <img src="{{ item.property.image.url }}" alt="{{ item.property.title }}" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>{{ item.property.title }}</h3>
+                    <p class="cart-item-price">${{ item.property.price }}</p>
+                </div>
+                <a href="{% url 'remove_from_cart' item.id %}" class="btn btn-remove">Remove</a>
+            </li>
+        {% endfor %}
+        </ul>
+        <a href="{% url 'property_list' %}" class="btn btn-secondary">Continue Shopping</a>
+    {% else %}
+        <p>Your cart is empty.</p>
+        <a href="{% url 'property_list' %}" class="btn btn-secondary">Browse Properties</a>
+    {% endif %}
+</div>
+{% endblock %}
